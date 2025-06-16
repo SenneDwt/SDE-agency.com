@@ -18,7 +18,7 @@ const Header = () => {
             <img 
               src="/SDE.png" 
               alt="SDE Agency Logo" 
-              className="h-10 w-10"
+              className="h-10 w-10 rounded-full"
             />
             <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
               SDE Agency
@@ -26,7 +26,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
               className={`transition-all duration-300 font-medium relative ${
@@ -50,6 +50,19 @@ const Header = () => {
             >
               Diensten
               {isActive('/diensten') && (
+                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-400 to-cyan-400"></div>
+              )}
+            </Link>
+            <Link
+              to="/prijzen"
+              className={`transition-all duration-300 font-medium relative ${
+                isActive('/prijzen') 
+                  ? 'text-purple-400' 
+                  : 'text-gray-300 hover:text-purple-400'
+              }`}
+            >
+              Prijzen
+              {isActive('/prijzen') && (
                 <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-400 to-cyan-400"></div>
               )}
             </Link>
@@ -117,6 +130,17 @@ const Header = () => {
                 }`}
               >
                 Diensten
+              </Link>
+              <Link
+                to="/prijzen"
+                onClick={() => setIsMenuOpen(false)}
+                className={`transition-colors font-medium py-2 ${
+                  isActive('/prijzen') 
+                    ? 'text-purple-400' 
+                    : 'text-gray-300 hover:text-purple-400'
+                }`}
+              >
+                Prijzen
               </Link>
               <Link
                 to="/over-ons"

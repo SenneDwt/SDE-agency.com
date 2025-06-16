@@ -60,8 +60,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl font-bold text-white mb-6">Laten We Een Gesprek Starten</h2>
                 <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                  Wij horen graag over uw project en bespreken hoe wij uw visie tot leven kunnen brengen. 
-                  Ons team staat klaar om gepersonaliseerde oplossingen te bieden die resultaten opleveren.
+                Ik hoor graag meer over uw project en bespreek graag hoe we uw visie tot leven kunnen brengen. Met op maat gemaakte oplossingen werk ik doelgericht aan concrete resultaten.
                 </p>
               </div>
 
@@ -82,7 +81,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">Bel Ons</h3>
-                    <p className="text-gray-400">+32 123 456 789</p>
+                    <p className="text-gray-400">+32 471 24 19 12</p>
                   </div>
                 </div>
 
@@ -92,47 +91,29 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">Bezoek Ons</h3>
-                    <p className="text-gray-400">Tech District<br />België</p>
+                    <p className="text-gray-400">Limburg, België</p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="bg-gradient-to-r from-purple-600 to-cyan-600 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white">Kantooruren</h3>
-                    <p className="text-gray-400">Ma - Vr: 9:00 - 18:00<br />Za: 10:00 - 16:00</p>
-                  </div>
-                </div>
+               
+                  
               </div>
 
-              <div className="bg-gradient-to-r from-purple-900/50 to-cyan-900/50 p-6 rounded-2xl border border-purple-500/20">
-                <div className="flex items-center space-x-3 mb-4">
-                  <MessageCircle className="h-6 w-6 text-purple-400" />
-                  <h3 className="font-semibold text-white">Snelle Reactie Garantie</h3>
-                </div>
-                <p className="text-gray-300">
-                  Wij reageren op alle vragen binnen 24 uur. Voor urgente zaken, 
-                  bel ons direct voor onmiddellijke hulp.
-                </p>
-              </div>
+              <div className="bg-gradient-to-r from-purple-900/50 to-cyan-900/50 p-6 rounded-2xl border border-purple-500/20 text-center">
+  <div className="flex justify-center items-center space-x-2">
+    <MessageCircle className="h-6 w-6 text-purple-400" />
+    <h3 className="font-semibold text-white">Snelle Reactie Garantie</h3>
+  </div>
+  <br />
+  <p className="text-gray-300">
+    Wij reageren op alle vragen binnen 24 uur. Voor urgente zaken, 
+    bel ons direct voor onmiddellijke hulp.
+  </p>
+</div>
 
-              {/* Social Links */}
-              <div>
-                <h3 className="font-semibold text-white mb-4">Volg Ons</h3>
-                <div className="flex space-x-4">
-                  <a href="#" className="bg-gray-800 p-3 rounded-lg hover:bg-purple-600 transition-colors duration-300">
-                    <Github className="h-5 w-5 text-white" />
-                  </a>
-                  <a href="#" className="bg-gray-800 p-3 rounded-lg hover:bg-cyan-600 transition-colors duration-300">
-                    <Linkedin className="h-5 w-5 text-white" />
-                  </a>
-                  <a href="#" className="bg-gray-800 p-3 rounded-lg hover:bg-blue-600 transition-colors duration-300">
-                    <Twitter className="h-5 w-5 text-white" />
-                  </a>
-                </div>
-              </div>
+
+
+              
             </div>
 
             {/* Contact Form */}
@@ -241,42 +222,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-gray-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
-              Veelgestelde <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Vragen</span>
-            </h2>
-          </div>
-
-          <div className="space-y-6">
-            {[
-              {
-                q: "Hoe lang duurt het om een website te ontwikkelen?",
-                a: "De ontwikkelingstijd varieert afhankelijk van de complexiteit van het project. Een eenvoudige website kan binnen 2-4 weken worden opgeleverd, terwijl complexere projecten 6-12 weken kunnen duren."
-              },
-              {
-                q: "Bieden jullie ondersteuning na de lancering?",
-                a: "Ja, wij bieden uitgebreide ondersteuning en onderhoudsdiensten na de lancering. Dit omvat technische ondersteuning, updates, beveiliging en performance monitoring."
-              },
-              {
-                q: "Kunnen jullie bestaande websites upgraden met AI-functionaliteiten?",
-                a: "Absoluut! Wij kunnen AI-chatbots, automatisering en andere intelligente functies integreren in uw bestaande website om de gebruikerservaring te verbeteren."
-              },
-              {
-                q: "Wat zijn de kosten voor een AI-chatbot?",
-                a: "De kosten variëren afhankelijk van de complexiteit en functionaliteiten. Wij bieden op maat gemaakte oplossingen vanaf €2.500. Neem contact met ons op voor een persoonlijke offerte."
-              }
-            ].map((faq, index) => (
-              <div key={index} className="bg-gray-800/80 p-6 rounded-2xl border border-purple-500/20">
-                <h3 className="text-lg font-semibold text-white mb-3">{faq.q}</h3>
-                <p className="text-gray-300">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };

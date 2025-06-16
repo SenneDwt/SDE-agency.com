@@ -7,7 +7,7 @@ const Services = () => {
       icon: Globe,
       title: 'Op Maat Websites',
       description: 'Moderne, responsieve websites gebouwd met de nieuwste technologieën. Van landingspagina\'s tot complexe webapplicaties.',
-      features: ['Responsief Design', 'SEO Geoptimaliseerd', 'Snelle Laadtijden', 'CMS Integratie'],
+      features: ['Responsief Design', 'SEO Geoptimaliseerd', 'Snelle Laadtijden'],
       color: 'from-purple-600 to-purple-700'
     },
     {
@@ -17,33 +17,13 @@ const Services = () => {
       features: ['Natuurlijke Taalverwerking', '24/7 Beschikbaarheid', 'Multi-platform Integratie', 'Analytics Dashboard'],
       color: 'from-cyan-600 to-cyan-700'
     },
-    {
-      icon: Smartphone,
-      title: 'Mobiele Apps',
-      description: 'Native en cross-platform mobiele applicaties die uw digitale aanwezigheid uitbreiden naar smartphones en tablets.',
-      features: ['iOS & Android', 'Push Notificaties', 'Offline Functionaliteit', 'App Store Optimalisatie'],
-      color: 'from-blue-600 to-blue-700'
-    },
+    
     {
       icon: Zap,
       title: 'AI Integratie',
       description: 'Naadloze integratie van AI-mogelijkheden in uw bestaande systemen voor verbeterde automatisering en intelligentie.',
-      features: ['API Integratie', 'Machine Learning', 'Automatisering Workflows', 'Data Analytics'],
+      features: ['API Integratie', 'Machine Learning', 'Automatisering Workflows'],
       color: 'from-orange-600 to-pink-600'
-    },
-    {
-      icon: Shield,
-      title: 'Beveiliging & Onderhoud',
-      description: 'Uitgebreide beveiligingsmaatregelen en doorlopend onderhoud om uw digitale assets veilig en up-to-date te houden.',
-      features: ['SSL Certificaten', 'Regelmatige Updates', 'Backup Oplossingen', 'Beveiligingsmonitoring'],
-      color: 'from-green-600 to-emerald-700'
-    },
-    {
-      icon: Headphones,
-      title: 'Ondersteuning & Training',
-      description: 'Toegewijde ondersteuning en training om ervoor te zorgen dat u het maximale uit uw digitale oplossingen haalt.',
-      features: ['24/7 Ondersteuning', 'Gebruikerstraining', 'Documentatie', 'Performance Monitoring'],
-      color: 'from-indigo-600 to-purple-700'
     }
   ];
 
@@ -108,33 +88,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Tech Stack */}
-      <section className="py-20 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
-              Onze <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Technologie Stack</span>
-            </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Wij werken met de meest geavanceerde technologieën om toekomstbestendige oplossingen te leveren
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {techStack.map((tech, index) => {
-              const Icon = tech.icon;
-              return (
-                <div key={index} className="text-center group">
-                  <div className="bg-gradient-to-r from-purple-600 to-cyan-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white">{tech.name}</h3>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* Process Section */}
       <section className="py-20 bg-gradient-to-r from-purple-900/30 to-cyan-900/30">
