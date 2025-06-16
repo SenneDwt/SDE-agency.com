@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Clock, MessageCircle, Github, Linkedin, Twitter } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ const Contact = () => {
     service: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -17,17 +20,40 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Bedankt voor uw bericht! Wij nemen binnenkort contact met u op.');
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      service: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      await emailjs.send(
+        'service_zip21ga',
+        'template_ri4qbnc',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          company: formData.company,
+          service: formData.service,
+          message: formData.message,
+          to_email: 'Senne@sde-agency.com',
+        },
+        '5ra9rhg-FAYFZnHaT'
+      );
+
+      setSubmitStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        service: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -180,12 +206,10 @@ const Contact = () => {
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white"
                   >
                     <option value="">Selecteer een dienst</option>
-                    <option value="website">Op Maat Website</option>
+                    <option value="website">Website op maat</option>
                     <option value="chatbot">AI Chatbot</option>
-                    <option value="mobile">Mobiele App</option>
-                    <option value="ai-integration">AI Integratie</option>
-                    <option value="maintenance">Ondersteuning & Onderhoud</option>
-                    <option value="consultation">Consultatie</option>
+                    <option value="other">Anders</option>
+                    
                   </select>
                 </div>
 
@@ -207,11 +231,29 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <Send className="h-5 w-5" />
-                  <span>Verstuur Bericht</span>
+                  {isSubmitting ? (
+                    <span>Verzenden...</span>
+                  ) : (
+                    <>
+                      <Send className="h-5 w-5" />
+                      <span>Verstuur Bericht</span>
+                    </>
+                  )}
                 </button>
+
+                {submitStatus === 'success' && (
+                  <p className="text-sm text-green-400 text-center">
+                    Bedankt voor uw bericht! Wij nemen binnenkort contact met u op.
+                  </p>
+                )}
+                {submitStatus === 'error' && (
+                  <p className="text-sm text-red-400 text-center">
+                    Er is een fout opgetreden bij het verzenden. Probeer het later opnieuw.
+                  </p>
+                )}
 
                 <p className="text-sm text-gray-400 text-center">
                   Door dit formulier in te dienen, gaat u akkoord met ons privacybeleid en algemene voorwaarden.
