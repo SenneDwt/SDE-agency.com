@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Twitter, Linkedin, Building } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -80,6 +80,10 @@ const Footer = () => {
                 <li className="flex items-start justify-center space-x-3">
                   <MapPin className="h-4 w-4 text-purple-400 mt-1" />
                   <span className="text-gray-400">Limburg, België</span>
+                </li>
+                <li className="flex items-center justify-center space-x-3">
+                  <Building className="h-4 w-4 text-purple-400" />
+                  <span className="text-gray-400">BE1015587426</span>
                 </li>
               </ul>
             </div>
