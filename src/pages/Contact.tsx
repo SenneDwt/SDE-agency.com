@@ -80,14 +80,133 @@ const Contact = () => {
       {/* Contact Content */}
       <section className="py-20 bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-8 order-1">
               <div>
                 <h2 className="text-3xl font-bold text-white mb-6">Laten We Een Gesprek Starten</h2>
-                <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Ik hoor graag meer over uw project en bespreek graag hoe we uw visie tot leven kunnen brengen. Met op maat gemaakte oplossingen werk ik doelgericht aan concrete resultaten.
-                </p>
+                
+                {/* Contact Form - Mobile Only */}
+                <div className="lg:hidden mb-8">
+                  <div className="bg-gray-800/80 p-6 rounded-2xl border border-purple-500/20">
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                      <div className="grid grid-cols-1 gap-6">
+                        <div>
+                          <label htmlFor="name-mobile" className="block text-sm font-semibold text-purple-400 mb-2">
+                            Volledige Naam *
+                          </label>
+                          <input
+                            type="text"
+                            id="name-mobile"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleInputChange}
+                            required
+                            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-400"
+                            placeholder="Uw volledige naam"
+                          />
+                        </div>
+                        <div>
+                          <label htmlFor="email-mobile" className="block text-sm font-semibold text-purple-400 mb-2">
+                            Email Adres *
+                          </label>
+                          <input
+                            type="email"
+                            id="email-mobile"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleInputChange}
+                            required
+                            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-400"
+                            placeholder="uw.email@voorbeeld.com"
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <label htmlFor="company-mobile" className="block text-sm font-semibold text-purple-400 mb-2">
+                          Bedrijfsnaam
+                        </label>
+                        <input
+                          type="text"
+                          id="company-mobile"
+                          name="company"
+                          value={formData.company}
+                          onChange={handleInputChange}
+                          className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-400"
+                          placeholder="Uw bedrijfsnaam"
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="service-mobile" className="block text-sm font-semibold text-purple-400 mb-2">
+                          Dienst Interesse *
+                        </label>
+                        <select
+                          id="service-mobile"
+                          name="service"
+                          value={formData.service}
+                          onChange={handleInputChange}
+                          required
+                          className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white"
+                        >
+                          <option value="">Selecteer een dienst</option>
+                          <option value="website">Website op maat</option>
+                          <option value="chatbot">AI Chatbot</option>
+                          <option value="other">Anders</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label htmlFor="message-mobile" className="block text-sm font-semibold text-purple-400 mb-2">
+                          Project Details *
+                        </label>
+                        <textarea
+                          id="message-mobile"
+                          name="message"
+                          value={formData.message}
+                          onChange={handleInputChange}
+                          required
+                          rows={4}
+                          className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none text-white placeholder-gray-400"
+                          placeholder="Vertel ons over uw project, tijdlijn, budget en eventuele specifieke vereisten..."
+                        ></textarea>
+                      </div>
+
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="w-full bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                      >
+                        {isSubmitting ? (
+                          <span>Verzenden...</span>
+                        ) : (
+                          <>
+                            <Send className="h-5 w-5" />
+                            <span>Verstuur Bericht</span>
+                          </>
+                        )}
+                      </button>
+
+                      {submitStatus === 'success' && (
+                        <p className="text-sm text-green-400 text-center">
+                          Bedankt voor uw bericht! Wij nemen binnenkort contact met u op.
+                        </p>
+                      )}
+                      {submitStatus === 'error' && (
+                        <p className="text-sm text-red-400 text-center">
+                          Er is een fout opgetreden bij het verzenden. Probeer het later opnieuw.
+                        </p>
+                      )}
+
+                      <p className="text-sm text-gray-400 text-center">
+                        Door dit formulier in te dienen, gaat u akkoord met ons privacybeleid en algemene voorwaarden.
+                      </p>
+                    </form>
+                  </div>
+                </div>
+
+                
               </div>
 
               <div className="space-y-6">
@@ -116,34 +235,26 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">Bezoek Ons</h3>
+                    <h3 className="font-semibold text-white">Van waar we zijn</h3>
                     <p className="text-gray-400">Limburg, België</p>
                   </div>
                 </div>
-
-               
-                  
               </div>
 
               <div className="bg-gradient-to-r from-purple-900/50 to-cyan-900/50 p-6 rounded-2xl border border-purple-500/20 text-center">
-  <div className="flex justify-center items-center space-x-2">
-    <MessageCircle className="h-6 w-6 text-purple-400" />
-    <h3 className="font-semibold text-white">Snelle Reactie Garantie</h3>
-  </div>
-  <br />
-  <p className="text-gray-300">
-    Wij reageren op alle vragen binnen 24 uur. Voor urgente zaken, 
-    bel ons direct voor onmiddellijke hulp.
-  </p>
-</div>
-
-
-
-              
+                <div className="flex justify-center items-center space-x-2 mb-4">
+                  <MessageCircle className="h-6 w-6 text-purple-400" />
+                  <h3 className="font-semibold text-white">Snelle Reactie Garantie</h3>
+                </div>
+                <p className="text-gray-300">
+                  Wij reageren op alle vragen binnen 24 uur. Voor urgente zaken, 
+                  bel ons direct voor onmiddellijke hulp.
+                </p>
+              </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="bg-gray-800/80 p-8 rounded-2xl border border-purple-500/20">
+            {/* Contact Form - Desktop Only */}
+            <div className="bg-gray-800/80 p-8 rounded-2xl border border-purple-500/20 order-2 hidden lg:block">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -209,7 +320,6 @@ const Contact = () => {
                     <option value="website">Website op maat</option>
                     <option value="chatbot">AI Chatbot</option>
                     <option value="other">Anders</option>
-                    
                   </select>
                 </div>
 
@@ -263,8 +373,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 };

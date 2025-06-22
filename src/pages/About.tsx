@@ -68,7 +68,7 @@ const About = () => {
               Over <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">SDE Agency</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ik ben een gepassioneerde AI-specialist en webontwikkelaar, toegewijd aan het creëren van slimme, schaalbare digitale oplossingen die echt impact maken. Met een scherp oog voor detail en een diep begrip van technologie help ik bedrijven om te groeien, te innoveren en zich te onderscheiden in een steeds veranderend digitaal landschap.
+            Ik ben een AI-specialist en webontwikkelaar met een passie voor slimme, schaalbare oplossingen die impact maken. Ik help bedrijven groeien, innoveren en opvallen in een digitaal landschap.
             </p>
           </div>
         </div>
@@ -112,14 +112,11 @@ const About = () => {
             Onze Missie
           </h2>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Wij geloven dat elke organisatie toegang moet hebben tot de kracht van AI en moderne webtechnologieën. 
-            Onze missie is om deze technologieën toegankelijk, begrijpelijk en waardevol te maken voor bedrijven 
-            die hun digitale toekomst willen vormgeven.
+          Wij geloven dat elke organisatie toegang moet hebben tot de kracht van AI en webtechnologie.
           </p>
           <div className="bg-gray-800/60 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
             <p className="text-lg text-gray-300 italic">
-              "Technologie moet mensen verbinden, niet vervangen. Wij bouwen intelligente oplossingen 
-              die menselijke creativiteit en AI-kracht combineren voor uitzonderlijke resultaten."
+            "Technologie moet mensen versterken, niet vervangen. Wij combineren menselijke creativiteit met AI voor slimme, impactvolle oplossingen.""
             </p>
             <p className="text-purple-400 font-semibold mt-4">- Senne Dewit, CEO</p>
           </div>
