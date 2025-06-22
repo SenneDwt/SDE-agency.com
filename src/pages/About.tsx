@@ -116,7 +116,7 @@ const About = () => {
           </p>
           <div className="bg-gray-800/60 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
             <p className="text-lg text-gray-300 italic">
-            "Technologie moet mensen versterken, niet vervangen. Wij combineren menselijke creativiteit met AI voor slimme, impactvolle oplossingen.""
+            "Technologie moet mensen versterken, niet vervangen. Wij combineren menselijke creativiteit met AI voor slimme, impactvolle oplossingen."
             </p>
             <p className="text-purple-400 font-semibold mt-4">- Senne Dewit, CEO</p>
           </div>
