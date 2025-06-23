@@ -14,7 +14,7 @@ const ScrollToTop = () => {
     window.scrollTo(0, 0);
     // Google Analytics pageview bij elke routewijziging
     if (typeof window.gtag === 'function') {
-      window.gtag('config', 'G-FC2XYC7H3M', {
+      window.gtag('config', 'G-W9C56ELPW7', {
         page_path: pathname,
       });
     }
