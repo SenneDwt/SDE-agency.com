@@ -12,7 +12,7 @@ const Pricing = () => {
             Op Maat Gemaakte <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Oplossingen</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Elke klant is uniek, en daarom bieden wij volledig op maat gemaakte oplossingen die perfect aansluiten bij uw specifieke behoeften.
+            Elke klant is uniek, en daarom bied ik volledig op maat gemaakte oplossingen die perfect aansluiten bij jouw specifieke behoeften.
           </p>
         </div>
 
@@ -22,16 +22,16 @@ const Pricing = () => {
             <div className="bg-gray-800/60 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
               <h2 className="text-2xl font-bold mb-4 text-purple-400">Waarom Op Maat?</h2>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Wij geloven dat elke organisatie unieke uitdagingen en doelen heeft. Daarom ontwikkelen we oplossingen die specifiek zijn afgestemd op uw situatie, in plaats van standaard pakketten aan te bieden.
+                Ik geloof dat elke organisatie unieke uitdagingen en doelen heeft. Daarom ontwikkel ik oplossingen die specifiek zijn afgestemd op jouw situatie, in plaats van standaard pakketten aan te bieden.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
                   <Sparkles className="h-6 w-6 text-purple-400 flex-shrink-0 mt-1" />
-                  <span className="text-gray-300">Persoonlijke aanpak voor uw specifieke behoeften</span>
+                  <span className="text-gray-300">Persoonlijke aanpak voor jouw specifieke behoeften</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Bot className="h-6 w-6 text-purple-400 flex-shrink-0 mt-1" />
-                  <span className="text-gray-300">Flexibele schaalbaarheid naar uw groei</span>
+                  <span className="text-gray-300">Flexibele schaalbaarheid naar jouw groei</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Code className="h-6 w-6 text-purple-400 flex-shrink-0 mt-1" />
@@ -51,7 +51,7 @@ const Pricing = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white mb-2">Gratis Consultatie</h3>
-                    <p className="text-gray-300">We bespreken uw doelen en uitdagingen</p>
+                    <p className="text-gray-300">We bespreken jouw doelen en uitdagingen</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-4">
@@ -69,7 +69,7 @@ const Pricing = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white mb-2">Ontwikkeling</h3>
-                    <p className="text-gray-300">Implementatie van uw unieke oplossing</p>
+                    <p className="text-gray-300">Implementatie van jouw unieke oplossing</p>
                   </div>
                 </li>
               </ol>
@@ -82,7 +82,7 @@ const Pricing = () => {
           <div className="bg-gradient-to-r from-purple-900/50 to-cyan-900/50 rounded-2xl p-8 max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold mb-4">Klaar om te Starten?</h2>
             <p className="text-gray-300 mb-8">
-              Neem contact met ons op voor een vrijblijvend gesprek over uw project. 
+              Neem contact met me op voor een vrijblijvend gesprek over jouw project. 
               We bespreken graag de mogelijkheden en maken een offerte op maat.
             </p>
             <Link 

@@ -21,8 +21,13 @@ const Footer = () => {
                 </span>
               </div>
               <p className="text-gray-400 leading-relaxed text-center">
-                Transformeren van bedrijven door intelligente websites en AI-gedreven chatbots. 
-                Uw succes is onze missie.
+               automatische workflows
+              </p>
+              <p className="text-gray-400 leading-relaxed text-center">
+               AI chatoplossingen
+              </p>
+              <p className="text-gray-400 leading-relaxed text-center">
+                websites
               </p>
             </div>
 

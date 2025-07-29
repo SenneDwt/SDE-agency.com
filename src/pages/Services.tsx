@@ -13,7 +13,7 @@ const Services = () => {
     {
       icon: Bot,
       title: 'AI Chatbots',
-      description: 'Intelligente conversationele AI die uw klanten begrijpt en directe, accurate antwoorden geeft.',
+      description: 'Intelligente conversationele AI die jouw klanten begrijpt en directe, accurate antwoorden geeft.',
       features: ['Natuurlijke Taalverwerking', '24/7 Beschikbaarheid', 'Multi-platform Integratie', 'Analytics Dashboard'],
       color: 'from-cyan-600 to-cyan-700'
     },
@@ -21,7 +21,7 @@ const Services = () => {
     {
       icon: Zap,
       title: 'AI Integratie',
-      description: 'Naadloze integratie van AI-mogelijkheden in uw bestaande systemen voor verbeterde automatisering en intelligentie.',
+      description: 'Naadloze integratie van AI-mogelijkheden in jouw bestaande systemen voor verbeterde automatisering en intelligentie.',
       features: ['API Integratie', 'Machine Learning', 'Automatisering Workflows'],
       color: 'from-orange-600 to-pink-600'
     }
@@ -46,10 +46,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              Onze <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Diensten</span>
+              Mijn <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Diensten</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Wij bieden uitgebreide AI-gedreven digitale oplossingen om uw bedrijf te transformeren en uw klanten te boeien
+              Ik bied uitgebreide AI-gedreven digitale oplossingen om jouw bedrijf te transformeren en jouw klanten te boeien
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ const Services = () => {
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: '01', title: 'Ontdekking', desc: 'Begrijpen van uw behoeften en doelen' },
+              { step: '01', title: 'Ontdekking', desc: 'Begrijpen van jouw behoeften en doelen' },
               { step: '02', title: 'Strategie', desc: 'Ontwikkelen van een op maat gemaakte aanpak' },
               { step: '03', title: 'Ontwikkeling', desc: 'Bouwen met de nieuwste technologieën' },
               { step: '04', title: 'Lancering', desc: 'Implementatie en doorlopende ondersteuning' }

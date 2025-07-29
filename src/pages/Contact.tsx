@@ -71,7 +71,7 @@ const Contact = () => {
               Neem <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Contact Op</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Klaar om uw digitale aanwezigheid te transformeren? Laten we uw project bespreken en samen iets geweldigs creëren.
+              Klaar om jouw digitale aanwezigheid te transformeren? Laten we jouw project bespreken en samen iets geweldigs creëren.
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ const Contact = () => {
                             onChange={handleInputChange}
                             required
                             className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-400"
-                            placeholder="Uw volledige naam"
+                            placeholder="Jouw volledige naam"
                           />
                         </div>
                         <div>
@@ -118,7 +118,7 @@ const Contact = () => {
                             onChange={handleInputChange}
                             required
                             className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-400"
-                            placeholder="uw.email@voorbeeld.com"
+                            placeholder="jouw.email@voorbeeld.com"
                           />
                         </div>
                       </div>
@@ -134,7 +134,7 @@ const Contact = () => {
                           value={formData.company}
                           onChange={handleInputChange}
                           className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-400"
-                          placeholder="Uw bedrijfsnaam"
+                          placeholder="Jouw bedrijfsnaam"
                         />
                       </div>
 
@@ -169,7 +169,7 @@ const Contact = () => {
                           required
                           rows={4}
                           className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none text-white placeholder-gray-400"
-                          placeholder="Vertel ons over uw project, tijdlijn, budget en eventuele specifieke vereisten..."
+                          placeholder="Vertel ons over jouw project, tijdlijn, budget en eventuele specifieke vereisten..."
                         ></textarea>
                       </div>
 
@@ -190,7 +190,7 @@ const Contact = () => {
 
                       {submitStatus === 'success' && (
                         <p className="text-sm text-green-400 text-center">
-                          Bedankt voor uw bericht! Wij nemen binnenkort contact met u op.
+                          Bedankt voor jouw bericht! Wij nemen binnenkort contact met u op.
                         </p>
                       )}
                       {submitStatus === 'error' && (
@@ -269,7 +269,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-400"
-                      placeholder="Uw volledige naam"
+                      placeholder="Jouw volledige naam"
                     />
                   </div>
                   <div>
@@ -284,7 +284,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-400"
-                      placeholder="uw.email@voorbeeld.com"
+                      placeholder="jouw.email@voorbeeld.com"
                     />
                   </div>
                 </div>
@@ -300,7 +300,7 @@ const Contact = () => {
                     value={formData.company}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-400"
-                    placeholder="Uw bedrijfsnaam"
+                    placeholder="Jouw bedrijfsnaam"
                   />
                 </div>
 
@@ -319,6 +319,7 @@ const Contact = () => {
                     <option value="">Selecteer een dienst</option>
                     <option value="website">Website op maat</option>
                     <option value="chatbot">AI Chatbot</option>
+                    <option value="AI automation">AI Automation</option>
                     <option value="other">Anders</option>
                   </select>
                 </div>
@@ -335,7 +336,7 @@ const Contact = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none text-white placeholder-gray-400"
-                    placeholder="Vertel ons over uw project, tijdlijn, budget en eventuele specifieke vereisten..."
+                    placeholder="Vertel ons over jouw project, tijdlijn, budget en eventuele specifieke vereisten..."
                   ></textarea>
                 </div>
 
@@ -356,7 +357,7 @@ const Contact = () => {
 
                 {submitStatus === 'success' && (
                   <p className="text-sm text-green-400 text-center">
-                    Bedankt voor uw bericht! Wij nemen binnenkort contact met u op.
+                    Bedankt voor jouw bericht! Wij nemen binnenkort contact met u op.
                   </p>
                 )}
                 {submitStatus === 'error' && (

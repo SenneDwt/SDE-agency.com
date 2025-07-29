@@ -12,7 +12,7 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-purple-400">1. Inleiding</h2>
             <p className="text-gray-300 leading-relaxed">
-              SDE Agency respecteert uw privacy en zorgt ervoor dat alle persoonlijke informatie die u ons verschaft vertrouwelijk wordt behandeld. 
+              SDE Agency respecteert jouw privacy en zorgt ervoor dat alle persoonlijke informatie die jij ons verschaft vertrouwelijk wordt behandeld. 
               Dit privacybeleid beschrijft welke gegevens we verzamelen en waarvoor we deze gebruiken.
             </p>
           </section>
@@ -33,32 +33,32 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-purple-400">3. Gebruik van Gegevens</h2>
             <p className="text-gray-300 leading-relaxed">
-              We gebruiken uw gegevens voor:
+              We gebruiken jouw gegevens voor:
             </p>
             <ul className="list-disc list-inside text-gray-300 mt-4 space-y-2">
               <li>Het verlenen van onze diensten</li>
               <li>Het verbeteren van onze diensten</li>
               <li>Het versturen van belangrijke updates</li>
-              <li>Het beantwoorden van uw vragen</li>
+              <li>Het beantwoorden van jouw vragen</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-purple-400">4. Gegevensbescherming</h2>
             <p className="text-gray-300 leading-relaxed">
-              We nemen passende technische en organisatorische maatregelen om uw gegevens te beschermen tegen verlies of onrechtmatige verwerking.
+              We nemen passende technische en organisatorische maatregelen om jouw gegevens te beschermen tegen verlies of onrechtmatige verwerking.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4 text-purple-400">5. Uw Rechten</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-purple-400">5. Jouw Rechten</h2>
             <p className="text-gray-300 leading-relaxed">
-              U heeft de volgende rechten:
+              Jij hebt de volgende rechten:
             </p>
             <ul className="list-disc list-inside text-gray-300 mt-4 space-y-2">
-              <li>Inzage in uw gegevens</li>
+              <li>Inzage in jouw gegevens</li>
               <li>Correctie van onjuiste gegevens</li>
-              <li>Verwijdering van uw gegevens</li>
+              <li>Verwijdering van jouw gegevens</li>
               <li>Bezwaar tegen verwerking</li>
             </ul>
           </section>

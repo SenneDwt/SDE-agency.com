@@ -11,7 +11,7 @@ const About = () => {
     {
       icon: Heart,
       title: 'Klantgericht',
-      description: 'Uw succes is onze prioriteit. Wij bouwen duurzame relaties door uitzonderlijke service.'
+      description: 'Jouw succes is onze prioriteit. Wij bouwen duurzame relaties door uitzonderlijke service.'
     },
     {
       icon: Award,
@@ -21,7 +21,7 @@ const About = () => {
     {
       icon: Users,
       title: 'Samenwerking',
-      description: 'Wij werken nauw samen met onze klanten als partners, brengen uw visie samen tot leven.'
+      description: 'Wij werken nauw samen met onze klanten als partners, brengen jouw visie samen tot leven.'
     }
   ];
 

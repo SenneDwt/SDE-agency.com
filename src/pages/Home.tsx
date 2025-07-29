@@ -44,7 +44,7 @@ const Home = () => {
               </div>
               
               <h1 className="text-3xl sm:text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
-                Transformeer Uw
+                Transformeer Jouw
                 <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent block">
                   {typedText}
                   <span className="animate-pulse">|</span>
@@ -52,9 +52,7 @@ const Home = () => {
               </h1>
               
               <p className="text-base sm:text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Ik creëer intelligente websites en conversationele chatbots die uw klanten boeien 
-                en bedrijfsgroei stimuleren. Ervaar de toekomst van digitale interactie.
-              </p>
+              Ik ontwikkel websites, AI chatoplossingen en automatische workflows die jouw bedrijf helpen groeien.</p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link 
@@ -86,7 +84,7 @@ const Home = () => {
                     <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
                     <Sparkles className="h-5 sm:h-6 sm:h-8 w-5 sm:w-6 sm:w-8 mb-2 sm:mb-3 sm:mb-4 relative z-10" />
                     <h3 className="font-semibold mb-1 sm:mb-2 relative z-10 text-sm sm:text-base sm:text-lg">AI Integratie</h3>
-                    <p className="text-xs sm:text-sm opacity-90 relative z-10">Geavanceerde AI-technologie naadloos geïntegreerd in uw digitale oplossingen</p>
+                    <p className="text-xs sm:text-sm opacity-90 relative z-10">Geavanceerde AI-technologie naadloos geïntegreerd in jouw digitale oplossingen</p>
                   </div>
                 </div>
               </div>
@@ -103,7 +101,7 @@ const Home = () => {
               Waarom Kiezen Voor <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">SDE Agency</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
-              Wij combineren cutting-edge technologie met creatief design om digitale ervaringen te creëren die uw bedrijf vooruit helpen
+              Ik combineer cutting-edge technologie met creatief design om digitale ervaringen te creëren die jouw bedrijf vooruit helpen
             </p>
           </div>
 
@@ -114,7 +112,7 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">Moderne Technologie</h3>
               <p className="text-gray-400 leading-relaxed">
-                Wij gebruiken de nieuwste frameworks en AI-technologieën om toekomstbestendige oplossingen te bouwen.
+                Ik gebruik de nieuwste frameworks en AI-technologieën om toekomstbestendige oplossingen te bouwen.
               </p>
             </div>
 
@@ -134,7 +132,7 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">Betrouwbare Ondersteuning</h3>
               <p className="text-gray-400 leading-relaxed">
-                24/7 monitoring en ondersteuning zorgen ervoor dat uw digitale oplossingen altijd optimaal functioneren.
+                24/7 monitoring en ondersteuning zorgen ervoor dat jouw digitale oplossingen altijd optimaal functioneren.
               </p>
             </div>
           </div>
@@ -145,16 +143,16 @@ const Home = () => {
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-purple-900/50 to-cyan-900/50">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-white">
-            Klaar Om Uw Digitale Transformatie Te Starten?
+            Klaar Om Jouw Digitale Transformatie Te Starten?
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8">
-            Laten we samen uw visie tot leven brengen met intelligente technologie en creatief design.
+            Laten we samen jouw visie tot leven brengen met intelligente technologie en creatief design.
           </p>
           <Link 
             to="/contact"
             className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300"
           >
-            <span>Start Uw Project</span>
+            <span>Start Jouw Project</span>
             <ArrowRight className="h-5 w-5" />
           </Link>
         </div>
