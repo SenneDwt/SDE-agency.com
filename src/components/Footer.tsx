@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="border-t border-purple-500/20 pt-8 mt-12">
           <div className="flex flex-col items-center space-y-4">
             <p className="text-gray-400 text-sm">
-              © 2024 SDE Agency. Alle rechten voorbehouden.
+              © 2025 SDE Agency. Alle rechten voorbehouden.
             </p>
             <div className="flex space-x-6">
               <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacybeleid</Link>
